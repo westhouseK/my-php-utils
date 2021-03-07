@@ -1,8 +1,6 @@
 <?php
 declare(strict_types=1);
 
-namespace Array;
-
 /**
  * 配列操作の関数群
  */

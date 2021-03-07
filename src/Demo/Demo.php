@@ -1,6 +1,7 @@
 <?php
+declare(strict_types=1);
 
-namespace Demo;
+// HACK: namespaceの付与
 
 class Demo {
 
