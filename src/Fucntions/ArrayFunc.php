@@ -1,6 +1,9 @@
 <?php
 declare(strict_types=1);
 
+// HACK: namespaceの付与
+namespace Functions;
+
 /**
  * 配列操作の関数群
  */
@@ -8,6 +11,7 @@ class ArrayFunc {
 
     /**
      * array_cast()
+     * 
      * 配列の中身を指定に型にキャストする
      *
      * @param array $arr キャストしたい配列
@@ -20,6 +24,8 @@ class ArrayFunc {
 
 
     /**
+     * convert_to_one_dimensional_array()
+     * 
      * 2次元配列を1次元配列に変換する
      *
      * @param array $arr 2次元配列
@@ -31,6 +37,8 @@ class ArrayFunc {
 
 
     /**
+     * concat_array()
+     * 
      * セパレーターで配列を文字列結合する
      *
      * @param array $arr 対象の配列

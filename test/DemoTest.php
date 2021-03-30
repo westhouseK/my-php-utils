@@ -5,7 +5,7 @@ require_once './src/Demo/Demo.php';
 use PHPUnit\Framework\TestCase;
 use Demo\Demo;
 
-class DemoTest extends TestCase {
+class SampleTest extends TestCase {
 
     /**
      * 1つ目のテストメソッドがコールされる前に行いたい前処理を書きます。
@@ -34,9 +34,9 @@ class DemoTest extends TestCase {
     /**
      * @test
      */
-    public function testDemoTest() {
+    public function testGetName() {
 
-        $demo = new Demo();
+        $demo = new Sample();
         $demo->name = 'taro';
         $this->assertEquals('taro', $demo->name);
     }

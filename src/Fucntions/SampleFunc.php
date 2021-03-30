@@ -2,13 +2,17 @@
 declare(strict_types=1);
 
 // HACK: namespaceの付与
+namespace Functions;
 
-class Demo {
+/**
+ * サンプルの関数群
+ */
+class Sample {
 
     private $name;
 
-    public function __set($name, $val) {
-        $this->name = $val; 
+    public function __construct($name) {
+        $this->name = $name;
     }
 
     public function __get($name) {

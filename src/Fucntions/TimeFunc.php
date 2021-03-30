@@ -2,6 +2,7 @@
 declare(strict_types=1);
 
 // HACK: namespaceの付与
+namespace Functions;
 
 /**
  * 時間を扱うの関数群
@@ -9,6 +10,8 @@ declare(strict_types=1);
 class TimeFunc {
 
     /**
+     * get_microtime()
+     * 
      * 現在のマイクロ秒を取得する
      *
      * @return string
@@ -19,6 +22,8 @@ class TimeFunc {
 
 
     /**
+     * measure_exec_time()
+     * 
      * 処理の実行時間を算出する
      *
      * @param string $start_time 処理実行開始時間

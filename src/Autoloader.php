@@ -14,7 +14,7 @@ final class Autoloader {
 
     private function read(string $class) {
 
-        $file = $this->root . $class . '.php';
+        $file = str_replace('\\', '/', $this->root . $class . '.php');
 
         echo $file;
 
